@@ -17,7 +17,7 @@ public class MainExample implements Operation{
 		// Operation.interfaceStaticMethod();
 		// Podemos invocar los DefaultMethods normalente siempre y cuando
 		// implementemos la Interfaz además de declarar el método si no dará error.
-		// interfaceDefaultMethod();
+		interfaceDefaultMethod();
 		
 		// Como no se pueden instanciar las interfaces al igual que las clases abstractas
 		// pero lo que si es que se pueden crear Clases anónimas. Entonces es lo que haremos.
