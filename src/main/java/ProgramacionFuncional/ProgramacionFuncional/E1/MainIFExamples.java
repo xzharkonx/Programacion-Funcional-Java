@@ -215,7 +215,8 @@ public class MainIFExamples {
 		
 		// Otra forma de hacerlo y añadiendo más funcionalidades.
 		// Creamos un nuevo método o bien seleccionamos todo el contenido y con las
-		// teclas [MAC¡¡ option + command + m
+		// teclas [MAC¡¡ option + command + m]
+		// teclas [WINDOWS¡¡ alt + shift + m]
 		btn.addActionListener(event -> out()); // Está es la línea del ejemplo
 		frame.getContentPane()
 			 .add(btn);
