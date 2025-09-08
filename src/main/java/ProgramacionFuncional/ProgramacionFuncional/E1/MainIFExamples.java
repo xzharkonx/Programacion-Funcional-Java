@@ -16,13 +16,13 @@ public class MainIFExamples {
 	
 	// Interfaces funcionales de las que dispone Java apara trabajar.
 	
-	// Callable<T>
+	// 2. Callable<T>
 	// Es una Interfaz funcional, usaremos esta en los ejemplos.
 	
-	// Runable
+	// 3. Runable
 	// Esta tiene un método abstracto, con lo cual es una interfaz funcional.
 	
-	// ActionListener
+	// 1. ActionListener
 	// Para eventos, pero mira que es una Interfaz porue la podemos pasar por lambda
 	// o de referencia a métodos porque es una Interfaz funcional porque tiene un
 	// método abstracto con lo cuál el actionPerfomed nos permite trabajar con ella
@@ -35,22 +35,41 @@ public class MainIFExamples {
 	
 	// Todas estas nos ayudan a trababajar de manera funcional con los streams.
 	
-	// Supplier<T>
-	// Consumer<T>
+	// 6. Supplier<T>
+	// 5. Consumer<T>
+	// 5.1. BiConsumer<T>
 	
-	// Function<T, R>
+	// 7. Function<T, R>
 	// Este recibe 2 tipos el de entrada y el de retorno.
 	
-	// BiFunction<T, R>
+	// 8. BiFunction<T, R>
 	// Acepta 2 tipos y retorna otro del tipo que le especifiquemos.
 	
-	// Comparator<T>
+	// 4. Comparator<T>
 	// Para comparar. Tiene muchisimos pero el que nos interesa es compare.
 	
-	// comparatorExample();
-	// runableExample();
-	// callableExample();
-	// actionListenerExample();
+	// ------------------------------------------------------------------------------------------
+	
+	// 4. comparatorExample();
+	// El objetivo para este ejemplo en el que se utilizo un TreSet que recibe
+	// por parametro una interfaz de Comparable para que este tenga una función
+	// anonima llama compare la cual podamos implementar a nuestra manera dentro 
+	// de la misma capa donde estemos mandando a llamar nuestro comparator y 
+	// mandarla a llamar.
+	
+	// 3. runableExample();
+	// El objetivo de esta interfaz es "Correr un Hilo aparte" para realizar
+	// alguna ejecución de alguna función determinada, solo va y ejecuta y no devuelve nada.
+	
+	// 2. callableExample();
+	// El objetivo de esta interfaz es ir a hacer alguna llamada a
+	// a un método o función para que realice alguna operación pero
+	// que este nos devuelva un valor.
+	
+	// 1. actionListenerExample();
+	// El objetivo de está interfaz es ir a ejecutar algo mediante algún evento como
+	// hacer clic en el botón izquierdo del mouse y a su vez está accion ejecutará
+	// un método donde hará cosas y termine sin devolver nada.
 	
 	
 	// ------ Ejemplo de Comparator ------
