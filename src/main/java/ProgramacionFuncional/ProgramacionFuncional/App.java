@@ -3,6 +3,7 @@ package ProgramacionFuncional.ProgramacionFuncional;
 import ProgramacionFuncional.ProgramacionFuncional.E0.MainExample;
 import ProgramacionFuncional.ProgramacionFuncional.E1.MainIFExamples;
 import ProgramacionFuncional.ProgramacionFuncional.E2.ConsumerExamples;
+import ProgramacionFuncional.ProgramacionFuncional.E3.SupplierExample;
 
 /**
  * Hello world!
@@ -22,12 +23,12 @@ public class App
         // new MainIFExamples().comparatorExample();
         // new MainIFExamples().runnableExample();
         // new MainIFExamples().callableExample();
-        new MainIFExamples().actionListenerExample();
+        // new MainIFExamples().actionListenerExample();
         
         // Ejercicio 2 Consumer
         // new ConsumerExamples().lista();
         
         // Ejercicio 3 Supplier
-        // new SupplierExample().example();
+        new SupplierExample().example();
     }
 }

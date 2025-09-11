@@ -37,7 +37,18 @@ public class MainIFExamples {
 	
 	// 6. Supplier<T>
 	// 5. Consumer<T>
-	// 5.1. BiConsumer<T>
+	// El objetivo de este ejemplo muestra como crear una función que acepte por
+	// parametro 1 valor (Objeto) de tipo T a tratar (Objeto) y una función
+	// que tomarà ese valor y se ejecutará, también podemos ampliar esta función para 
+	// agregar una serie de funciones que se ejecuten teniendo por parametro de entrada el valor T.
+	// Por lo que esta funcion cosume tanto el valor como la función o funciones que ejecutará ese valor.
+	
+	// 5.1. BiConsumer<T, U>
+	// El objetivo de este ejemplo muestra como crear una función que acepte por
+	// parametro 2 valores (Objeto) de tipo T y U a tratar (Objetos) y una función
+	// que tomarà esos valores y se ejecutará, también podemos ampliar esta función para 
+	// agregar una serie de funciones que se ejecuten teniendo por parametros de entrada el valor T y U.
+	// Por lo que esta funcion cosume tanto ambos valores T y U como la función o funciones que ejecutará esos valores.
 	
 	// 7. Function<T, R>
 	// Este recibe 2 tipos el de entrada y el de retorno.
