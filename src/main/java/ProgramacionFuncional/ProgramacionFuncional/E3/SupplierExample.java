@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 public class SupplierExample {
 	
 	// Supplier<T>
-	// Solo tiene un método T get() qye devuelve ese método.
+	// Solo tiene un método T get() que devuelve ese método.
 	
 	public static void example() {
 		// Supplier<LocalDate> date = () -> LocalDate.now(); // LAMBDA
