@@ -5,11 +5,31 @@ public class MultiplesFuncionesPorInterface implements Calculadora, Menu {
 	public static void main(String[] args) {
 		MultiplesFuncionesPorInterface app = new MultiplesFuncionesPorInterface();
 		//app.appOperaciones();
-		app.mostrarMenu();
-		System.out.println("Operación realizada: " + opcion);
+		System.out.println("Aplicación de operaciones matemáticas");
+		System.out.println("-----------------");
+		String[] data = app.mostrarMenu();
+		if(data == null) {
+			System.out.println("No se seleccionó ninguna operación. Saliendo de la aplicación...");
+			return;
+		}
+		String operacion = data[0];
+		String num1 = data[1];
+		String num2 = data[2];
+		
+		System.out.println("Datos ingresados:");
+		System.out.println("-----------------");
+		System.out.println("Operación: " + operacion);
 		System.out.println("Número 1: " + num1);
 		System.out.println("Número 2: " + num2);
-		app.operaciones(opcion,num1,num2);
+		
+		//System.out.println("Operación seleccionada: " + opcion);
+		
+		if(opcion.equals(operacion)) {
+			System.out.println("Saliendo de la aplicación...");
+			return;
+		}
+		app.operaciones(operacion,num1,num2);
+		System.out.println("-----------------");
 		System.out.println("Fin de la aplicación.");
 		
 	}

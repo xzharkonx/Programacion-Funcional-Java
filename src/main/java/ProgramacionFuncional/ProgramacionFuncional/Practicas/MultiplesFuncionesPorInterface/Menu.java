@@ -23,7 +23,7 @@ public interface Menu {
 	
 	public void appMenu();
 	
-	default void mostrarMenu() {
+	default String[] mostrarMenu() {
 		System.out.println(MENU);
 		
 		String[] seleccion = seleccionMenu();
@@ -31,8 +31,11 @@ public interface Menu {
 			String opcion = seleccion[0];
 			String num1 = seleccion[1];
 			String num2 = seleccion[2];
-			
+			System.out.println("Operación a realizar: " + opcion);
+			System.out.println("Número 1: " + num1);
+			System.out.println("Número 2: " + num2);
 		}
+		return seleccion;
 		
 	}
 	private String[] seleccionMenu() {
@@ -56,6 +59,9 @@ public interface Menu {
 		System.out.println("x. Salir");
 		
 		*/
+		System.out.println("Entrada de datos...");
+		System.out.println("-----------------");
+		
 		opcion = leerEntrada();
 		if(opcion.equals("x")) {
 			System.out.println("Saliendo del menú...");

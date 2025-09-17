@@ -5,7 +5,8 @@ public interface Calculadora {
 	public void appOperaciones();
 	
 	default void operaciones(String op, String num1, String num2) {
-		System.out.println("Aplicación de operaciones matemáticas");
+		System.out.println("Iniciando operación...");
+		System.out.println("-----------------");
 		switch (op) {
 			case "s":
 				System.out.println("Suma: " + suma(Integer.parseInt(num1), Integer.parseInt(num2)));

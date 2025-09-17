@@ -25,9 +25,11 @@ public class MainExample implements Operation{
 		Operation o1 = multiplication(); // Ahora ya tenemos nuestra Clase anónima.
 		Operation o2 = () -> 3 * 3.3f; // A modo de lambda. Implementamos su unico método abstracto.
 		Operation o3 = () -> o1.operation(); // Es como si reemplazará la interfaz.
+		Operation o6 = () -> this.operation(); // Es como si reemplazará la interfaz.
+		
 		Operation o4 = o1::operation; // Por método de referencia, con los dos :: 
-		float operacion = o1.operation(); // Mira como también lo permite porque devuelve un float
-		Operation operacion2 = o1::operation;
+		float operacion = o2.operation(); // Mira como también lo permite porque devuelve un float
+		Operation operacion2 = o3::operation;
 		
 		// Esta se la pasaremos ahora a nuestro método porque esta es una interfaz.
 		// printResultOfThis(o1);
@@ -67,6 +69,11 @@ public class MainExample implements Operation{
 			
 		};
 		System.out.println(o5.operation());
+		
+		System.out.println("Ahora con método de referencia a un método de esta clase.");
+		printResultOfThis(o6);
+		System.out.println("O directo:");
+		printResultOfThis(this::operation);
 	}
 
 	private Operation multiplication() {
@@ -106,7 +113,7 @@ public class MainExample implements Operation{
 	@Override
 	public float operation() {
 		// TODO: Solo lo declaramos para que no de error en la Implementación de la interfaz.
-		return 100;
+		return 101.1f;
 	}
 	 
 }

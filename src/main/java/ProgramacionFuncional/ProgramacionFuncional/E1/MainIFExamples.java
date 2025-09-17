@@ -151,6 +151,9 @@ public class MainIFExamples {
 	// -- Clase con clase anónima.
 	public static void runnableExample2() {	
 		Thread thread = new Thread(new Runnable() {
+			
+			// Mira que se implementa y se ejecuta un método run 
+			// que solo ejecuta y no devuelve nada.
 			@Override
 			public void run() {
 				int i = 0;
@@ -165,7 +168,11 @@ public class MainIFExamples {
 	
 	// ------ Ejemplo 3 de Runable ------
 	// -- Clase con Lambda.
+	
 	public static void runnableExample3() {		
+
+		// Mira que se implementa directamente una función lambda
+		// que solo ejecuta y no devuelve nada.
 		Thread thread = new Thread(() -> {
 					int i = 0;
 					while(i++ != 100) {
